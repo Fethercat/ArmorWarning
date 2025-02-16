@@ -43,7 +43,7 @@ public class ArmorWarningClient implements ClientModInitializer {
     private void sendWarning(ClientPlayerEntity player, String armorPieceName) {
         Text warningMessage = Text.literal("PLEASE RE-EQUIP YOUR " + armorPieceName + "!!")
                 .formatted(Formatting.BOLD, Formatting.DARK_RED);
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 10; i++) {
             player.sendMessage(warningMessage, false);
         }
     }
