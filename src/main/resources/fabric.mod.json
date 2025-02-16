@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "armorwarning",
+	"version": "${version}",
+	"name": "Armor Warning",
+	"description": "A mod that warns the player when a armor piece is taken off!",
+	"authors": [
+		"ShadowedLeaves"
+	],
+	"contact": {
+		"sources": "https://github.com/Fethercat/ArmorWarning"
+	},
+	"license": "MIT",
+	"icon": "assets/armorwarning/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"shadowedleaves.armorwarning.ArmorWarning"
+		],
+		"client": [
+			"shadowedleaves.armorwarning.ArmorWarningClient"
+		]
+	},
+	"mixins": [
+		"armorwarning.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
